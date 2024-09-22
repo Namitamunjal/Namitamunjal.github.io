@@ -1,0 +1,44 @@
+body{
+  padding: 45px;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+li::marker {
+  color: transparent;
+}
+
+table.one td{
+  
+  /* border-left: 3px solid black; */
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+  
+}
+table.one td.a{
+  border-right: 3px solid black;
+}
+
+
+
+hr{
+  height:2px ;
+  background-color: black;
+  width: 100%;
+}
+
+table.two td.three{
+  /* border-bottom: 2px solid black; */
+  width: 300px;
+}
+
+table.two td{
+  border-bottom: 2px solid black;
+  /* width: 500px; */
+}
+
+/* table.two{
+  margin-left: 20%;
+} */
