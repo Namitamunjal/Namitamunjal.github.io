@@ -34,7 +34,7 @@ app.use(express.static(path.join(__dirname, 'public'), {
 // });
 
 const projects = [
-  { id: 1, title: "Decentralized NFT-based certification system", description: "A decentralized NFT-based certification system where achievements are issued as Soulbound NFTs, making them tamper-proof and instantly verifiable.A blockchain-based digital certification system that enables instant, tamper-proof credential verification, eliminating fraud and manual checks.",link:"#",year:"2025" },
+  { id: 1, title: "Certifi-Chain", description: "A decentralized NFT-based certification system where achievements are issued as Soulbound NFTs, making them tamper-proof and instantly verifiable.A blockchain-based digital certification system that enables instant, tamper-proof credential verification, eliminating fraud and manual checks.",link:"https://github.com/Namitamunjal/certify-chain",year:"2025" },
   { id: 2, title: "My Portfolio Website", description: "Developed a personal portfolio website using React and Tailwind CSS, showcasing my projects, certifications, and research work. Integrated a backend API for dynamic content management and real-time data retrieval.",link:"https://namitamunjal.github.io/",year:"2025" },
   { id: 3, title: "Study Buddies", description: "StudyBuddies is a web application designed to make studying more effective and collaborative. This lets users create study cards, organize them into decks, and share them publicly or privately. ",link:"https://github.com/Namitamunjal/Studybuddies_Infosys_Internship_Oct2024",year:"2024" },
   { id: 4, title: "Green Gauge: Energy Credit & Carbon Offset Tracker", description: "GreenGauge is a robust web application designed to empower individuals and organizations to monitor and manage their energy consumption efficiently. With real-time alerts, tracking dashboards, and tailored recommendations, GreenGauge helps reduce carbon footprints by promoting sustainability. This application is aimed at providing both individuals and corporations insights into their energy consumption and offset efforts to achieve a greener planet.",link:"https://github.com/Namitamunjal/AlgoProject",year:"2024" },
@@ -85,24 +85,28 @@ const certificates = [
     name: "Certificate of Participation in Round 1: EY Techathon 4.0",
     issuedBy: "Unstop",
     issuedDate: "November 2023",
+    skills: ["React","Frontend","Node"],
   },
   {
     id: 7,
     name: "Microsoft Learn Student Ambassador - Backend Web Development using JavaScript, Node.js & Express",
     issuedBy: "Microsoft",
     issuedDate: "July 2023",
+    skills:["JavaScript", "Node","Express"],
   },
   {
     id: 8,
     name: "Python and Artificial Intelligence",
     issuedBy: "Amazon Web Services (AWS)",
     issuedDate: "July 2023",
+    skills:["Python"],
   },
   {
     id: 9,
     name: "Web Development",
     issuedBy: "Coding Blocks Junior",
     issuedDate: "March 2021",
+    skills:["JavaScript", "Node","React"],
   },
 ];
 app.get('/certificates', (req, res) => {
