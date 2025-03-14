@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-card {
+  background-color: #1e1e1e;
+  padding: 40px;
+  border-radius: 12px;
+  border: 2px solid #00ff00;
+  width: 400px;
+  text-align: center;
+  color: #00ff00;
+}
+
+.contact-card h2 {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: transparent;
+  border: 2px solid #00ff00;
+  color: #00ff00;
+  border-radius: 5px;
+  outline: none;
+  resize: none;
+  transition: all 0.3s;
+}
+
+.input-group label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #888;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.input-group input:focus + label,
+.input-group textarea:focus + label,
+.input-group input:valid + label,
+.input-group textarea:valid + label {
+  top: -18px;
+  left: 10px;
+  color: #00ff00;
+  font-size: 12px;
+  background-color: #121212;
+  padding: 0 5px;
+}
+
+.send-btn {
+  background-color: #00ff00;
+  color: #121212;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.send-btn:hover {
+  background-color: #00cc00;
+}
+
+/* Social Icons Styling */
+.social-icons {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 25px;
+  padding-top: 10px;
+  border-radius: 8px;
+}
+
+.social-icons a {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+}
+
+/* Submitted Data Styling */
+.submitted-data {
+  margin-top: 20px;
+  background-color: #1e1e1e;
+  border: 1px solid #00ff00;
+  border-radius: 5px;
+  padding: 10px;
+  color: #00ff00;
+}

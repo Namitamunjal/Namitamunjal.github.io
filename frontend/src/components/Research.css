@@ -1,0 +1,108 @@
+.research-container {
+  padding: 20px;
+  margin-top: 6%;
+  display: flex;
+  justify-content: center;
+  color: #00FF00;
+  font-family: "Fira Code", monospace;
+}
+
+.research-terminal-window {
+  width: 60%;
+  background: linear-gradient(145deg, #1b1b1b, #222222);
+  border-radius: 12px;
+  border: 2px solid #00FF00;
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.research-terminal-window:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 25px rgba(0, 255, 0, 0.8);
+}
+
+.research-terminal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #121212;
+  border-bottom: 1px solid #00FF00;
+  color: #00FF00;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.research-buttons span {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.research-red { background-color: #ff605c; }
+.research-yellow { background-color: #ffbd44; }
+.research-green { background-color: #00ca4e; }
+
+.research-red:hover { transform: scale(1.1); }
+.research-yellow:hover { transform: scale(1.1); }
+.research-green:hover { transform: scale(1.1); }
+
+.research-terminal-body {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #00FF00;
+  max-height: 500px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #00ff00 #1e1e1e;
+}
+
+/* Custom scrollbar for Chrome, Edge, and Safari */
+.research-terminal-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.research-terminal-body::-webkit-scrollbar-thumb {
+  background-color: #00FF00;
+  border-radius: 10px;
+}
+
+.research-entry {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 8px;
+  background: rgba(0, 255, 0, 0.1);
+  transition: background 0.3s;
+}
+
+.research-entry:hover {
+  background: rgba(0, 255, 0, 0.2);
+}
+
+.research-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+  color: #00ff00;
+  text-shadow: 0 0 3px #00ff00;
+}
+
+.research-description {
+  margin-bottom: 10px;
+  color: #b8ffb8;
+}
+
+.research-link {
+  color: #00ff00;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.research-link:hover {
+  color: #b8ffb8;
+  text-decoration: underline;
+}

@@ -1,0 +1,236 @@
+/* General Styling */
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+}
+
+.text-green {
+  color: #00ff00;
+}
+
+/* --------------- Subtle Background Animation --------------- */
+.matrix-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  animation: matrixRain 20s infinite linear;
+}
+
+
+/* Sidebar Styling */
+.sidebar {
+  position: fixed;
+  left: -250px;  /* Initially hidden */
+  top: 0;
+  width: 250px;
+  height: 100%;
+  background: #000;  /* Completely black */
+  box-shadow: 5px 0 15px rgba(0, 255, 0, 0.3);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+  padding-top: 3%;
+}
+
+.sidebar.open {
+  left: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer; /* Makes it clear that it's clickable */
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  color: #00ff00; /* Text color */
+  transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li:hover {
+  color: #00ffaa;
+  text-shadow: 0 0 10px #00ffaa;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 24px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #00ff00;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #6aff00;
+}
+
+/* Menu Button */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #00ff00;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.menu-btn:hover {
+  color: #00ffaa;
+}
+
+/* Content Styling */
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #00ff00;
+  box-shadow: 0 0 20px #00ff00;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 30px #00ffaa;
+}
+
+/* Neon Text */
+.neon-text {
+  font-family: "Courier New", monospace;
+  color: #00ff00;
+  text-shadow: 0 0 10px #00ff00, 0 0 20px #00ffaa;
+}
+
+/* Terminal Box */
+.terminal-box {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid #00ff00;
+  box-shadow: 0 0 10px #00ff00;
+  font-family: "Courier New", monospace;
+  color: #00ff00;
+  max-width: 400px;
+  text-align: left;
+}
+
+/* Typing Effect */
+.typing-effect::after {
+  content: "|";
+  display: inline-block;
+  margin-left: 5px;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes matrixRain {
+  0% {
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+  50% {
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.349) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+  100% {
+    background: radial-gradient(circle, rgba(0, 255, 0, 0.2) 0%, rgba(0, 0, 0, 1) 100%);
+  }
+}
+
+/* Live Clock */
+.live-clock {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-family: "Courier New", monospace;
+  color: #00ff00;
+  font-size: 18px;
+  text-shadow: 0 0 10px #00ffaa;
+}
+
+/* Scrolling Matrix Code Effect */
+/* .matrix-code {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  color: rgba(0, 255, 0, 0.2);
+  overflow: hidden;
+  white-space: nowrap;
+  transform: rotate(90deg);
+  animation: scrollCode 15s linear infinite;
+} */
+/* 
+@keyframes scrollCode {
+  from {
+    transform: translateY(-100%) rotate(0deg);
+  }
+  to {
+    transform: translateY(100%) rotate(0deg);
+  }
+} */
+
+/* Social Media Icons */
+.social-icons {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: #00ff00;
+  font-size: 24px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #00ffaa;
+}
+
+/* Hover Effect on Skills */
+.typing-effect {
+  transition: color 0.5s ease-in-out;
+}
+
+.typing-effect:hover {
+  color: #00ffaa;
+  text-shadow: 0 0 10px #00ffaa;
+}
