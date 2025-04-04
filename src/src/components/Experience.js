@@ -8,7 +8,7 @@ const Experience = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const response = await fetch("http://localhost:5000/experience");
+        const response = await fetch("https://namitamunjal-github-io.onrender.com/experience");
         if (!response.ok) {
           throw new Error(`Error: ${response.status} ${response.statusText}`);
         }

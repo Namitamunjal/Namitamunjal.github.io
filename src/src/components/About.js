@@ -9,7 +9,7 @@ const About = () => {
   useEffect(() => {
     const fetchAboutContent = async () => {
       try {
-        const response = await fetch("http://localhost:5000/about"); 
+        const response = await fetch("https://namitamunjal-github-io.onrender.com/about"); 
         if (!response.ok) {
           throw new Error(`Error: ${response.status} ${response.statusText}`);
         }

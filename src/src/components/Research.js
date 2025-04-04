@@ -8,7 +8,7 @@ const Research = () => {
   useEffect(() => {
     const fetchResearchArticles = async () => {
       try {
-        const response = await fetch("http://localhost:5000/research");
+        const response = await fetch("https://namitamunjal-github-io.onrender.com/research");
         if (!response.ok) {
           throw new Error(`Error: ${response.status} ${response.statusText}`);
         }
