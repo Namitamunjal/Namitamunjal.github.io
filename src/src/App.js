@@ -12,9 +12,7 @@ import ContactForm from "./components/ContactForm";
 const Sidebar = ({ toggleSidebar, isOpen, setCurrentPage }) => {
   return (
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
-      <button className="close-btn" onClick={toggleSidebar}>
-        &#10006;
-      </button>
+      
       <ul>
         <li onClick={() => {setCurrentPage("home"); toggleSidebar();}}>Home</li>
         <li onClick={() => {setCurrentPage("about"); toggleSidebar();}}>About</li>
